@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>SHOW TIMING</title>
+</head>
+
+                         
+<body>
+    <div class="container">
+       
+        <header class="bg-primary p-4 text-white text-center"><strong>GROCESSORY LIST</strong></header>
+   
+
+
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thread>
+                            <tr>
+                                <th>items</th>
+                                <th>price</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thread>
+                        <tbody>
+                            <tr class="active">
+                                <td>Dairy Milk</td>
+                                <td>100</td>
+                                <td>10</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Milky Bar</td>
+                                <td>20</td>
+                                <td>11</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Good day</td>
+                                <td>40</td>
+                                <td>20</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Magiee</td>
+                                <td>20</td>
+                                <td>50</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Tropicana</td>
+                                <td>99</td>
+                                <td>19</td>
+                            </tr>
+                            <tr class="active">
+                                <td>Hide and Seek</td>
+                                <td>30</td>
+                                <td>30</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+
+               
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+mymodule.js
+
+
+
+exports.myDateTime = function () {
+    return Date();
+};
+
+
+
+
+program.js
+
+
+// JavaScript source code
+var http = require('http');
+var dt = require('./mymodule');
+
+http.createServer(function (req, res) {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write("The date and time are currently: " + dt.myDateTime());
+    res.end();
+}).listen(8080);
+
+console.log("Server running");
+
+css
+
+.bottom {
+    position: bottom;
+    top: 50%;
+    left: 50%
+}
+
+table {
+    text-align: center;
+    font-size: medium;
+    align-items: center;
+}
+
+body {
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/65/50/supermarket-food-items-seamless-background-vector-1876550.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+ 
+
